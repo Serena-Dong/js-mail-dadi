@@ -5,4 +5,28 @@
 }
 body{
     font-family: sans-serif;
+    text-align: center;
+}
+
+.container{
+    width: 1200px;
+    margin-bottom: 3rem;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.col{
+    min-height: 100px;
+    min-width: 600px;
+
+}
+.border{
+    border: 2px black dashed;
+}
+h1{
+    margin-bottom: 3rem;
+}
+p{
+    font-size: 3rem;
 }

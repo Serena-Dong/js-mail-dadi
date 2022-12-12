@@ -7,12 +7,25 @@
     <title>Gioco dei dadi e Finta Login</title>
 
     <link rel="stylesheet" href="./css/style.css">
-    <script deref src="./js/script.js"></script>
 </head>
 <body>
     <div>
-        <div class="resultPlayer"></div>
-        <div class="resultComputer"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col" >
+                    <h1>TU</h1>
+                    <p id="resultPlayer"></p>
+                </div>
+                <div class="col" >
+                    <h1>COMPUTER</h1>
+                    <p id="resultComputer"></p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h1 id="vincitore"></h1>
+        </div>
+        <script src="./js/script.js"></script>
     </div>
 </body>
 </html>
