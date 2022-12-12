@@ -6,7 +6,7 @@ const computer = document.getElementById('resultComputer');
 
 // 
 const playerNumber= [];
-const cumputerNumber= [];
+const computerNumber= [];
 
 
 
@@ -24,10 +24,21 @@ for (let i = 0; i < 1; i++) {
 // generatore per il computer //
 for (let i = 0; i < 1; i++) {
 
-    const randomNumber = Math.floor(Math.random() * 6) + 2;
+    const randomNumber = Math.floor(Math.random() * 6) + 1;
 
-    cumputerNumber.push(randomNumber);
+    computerNumber.push(randomNumber);
 
-    console.log(cumputerNumber);
+    console.log(computerNumber);
 
 }
+
+//dichiarare il vincitore
+ if (playerNumber == computerNumber){
+    result = 'PAREGGIO!';
+} else if (playerNumber > computerNumber){
+    result = 'HAI VINTO!';
+} else if (playerNumber < computerNumber){
+    result = 'HAI PERSO!';
+}
+
+console.log(result);
