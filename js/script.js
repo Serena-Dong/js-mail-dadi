@@ -1,4 +1,4 @@
-// 
+// GIOCO DI DADI
 const playerNumber= [];
 const computerNumber= [];
 
@@ -39,4 +39,10 @@ const computer = document.getElementById('resultComputer');
 const vincitore = document.getElementById('vincitore');
 player.innerText = playerNumber;
 computer.innerText = computerNumber ;
-vincitore.innerText = result
+vincitore.innerText = result;
+
+
+//FINTA LOGIN
+const email = document.getElementById('e-mail');
+
+const allowedEmails = []
