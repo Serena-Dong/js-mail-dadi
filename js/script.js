@@ -1,34 +1,15 @@
-// GIOCO DI DADI
-const playerNumber= [];
-const computerNumber= [];
-
 // generatore per il giocatore //
-for (let i = 0; i < 1; i++) {
 
-    const randomNumber = Math.floor(Math.random() * 6) + 1;
+const playerNumber = Math.floor(Math.random() * 6) + 1;
+const cpuNumber = Math.floor(Math.random() * 6) + 1;
 
-    playerNumber.push(randomNumber);
-
-    console.log(playerNumber);
-}
-
-// generatore per il computer //
-for (let i = 0; i < 1; i++) {
-
-    const randomNumber = Math.floor(Math.random() * 6) + 1;
-
-    computerNumber.push(randomNumber);
-
-    console.log(computerNumber);
-
-}
 
 // dichiarare il vincitore //
- if (playerNumber == computerNumber){
+ if (playerNumber == cpuNumber){
     result = 'PAREGGIO!';
-} else if (playerNumber > computerNumber){
+} else if (playerNumber > cpuNumber){
     result = 'HAI VINTO!';
-} else if (playerNumber < computerNumber){
+} else if (playerNumber < cpuNumber){
     result = 'HAI PERSO!';
 }
 console.log(result);
@@ -38,7 +19,7 @@ const player = document.getElementById('resultPlayer');
 const computer = document.getElementById('resultComputer');
 const vincitore = document.getElementById('vincitore');
 player.innerText = playerNumber;
-computer.innerText = computerNumber ;
+computer.innerText = cpuNumber ;
 vincitore.innerText = result;
 
 
