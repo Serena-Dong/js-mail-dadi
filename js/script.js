@@ -42,7 +42,3 @@ computer.innerText = computerNumber ;
 vincitore.innerText = result;
 
 
-//FINTA LOGIN
-const email = document.getElementById('e-mail');
-
-const allowedEmails = []
